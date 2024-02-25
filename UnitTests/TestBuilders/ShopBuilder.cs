@@ -1,4 +1,6 @@
-﻿using FlowerShop.Domain.Entites;
+﻿using FlowerShop.ApplicationService.DataTransferObjects.Flower;
+using FlowerShop.ApplicationService.DataTransferObjects.Shop;
+using FlowerShop.Domain.Entites;
 
 namespace UnitTests.TestBuilders;
 public sealed class ShopBuilder
@@ -9,6 +11,8 @@ public sealed class ShopBuilder
     private string _email = "test@email.com";
     private readonly DateTime _creationDate = DateTime.Now;
     private List<Flower> _flowerList = [];
+    private List<int> _flowerIdList = [];
+    private List<FlowerResponse> _flowerResponseList = [];
 
     public static ShopBuilder NewObject() =>
         new();
@@ -22,6 +26,30 @@ public sealed class ShopBuilder
             Email = _email,
             CreationDate = _creationDate,
             Flowers = _flowerList
+        };
+
+    public ShopSave SaveBuild() =>
+        new(_name,
+            _location,
+            _email,
+            _flowerIdList);
+    
+    public ShopUpdate UpdateBuild() =>
+        new(_id,
+            _name,
+            _location,
+            _email,
+            _flowerIdList);
+
+    public ShopResponse ResponseBuild() =>
+        new()
+        {
+            Id = _id,
+            Name = _name,
+            Location = _location,
+            Email = _email,
+            CreationDate = _creationDate,
+            Flowers = _flowerResponseList
         };
 
     public ShopBuilder WithName(string name)

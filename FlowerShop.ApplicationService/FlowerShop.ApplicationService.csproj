@@ -7,7 +7,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Folder Include="DataTransferObjects\" />
 	  <Folder Include="Interfaces\Mappers\" />
 	  <Folder Include="Interfaces\Services\" />
 	  <Folder Include="Mappers\" />
