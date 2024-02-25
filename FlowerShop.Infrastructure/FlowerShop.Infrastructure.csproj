@@ -8,8 +8,11 @@
 
 	<ItemGroup>
 	  <Folder Include="EntitiesMapping\" />
-	  <Folder Include="DatabaseContexts\" />
 	  <Folder Include="Repositories\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
 	</ItemGroup>
 
 	<ItemGroup>
