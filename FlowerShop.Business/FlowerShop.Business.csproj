@@ -7,7 +7,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Folder Include="Interfaces\Repositories\" />
 	  <Folder Include="Settings\ValidatorSettings\" />
 	</ItemGroup>
 
