@@ -3,6 +3,7 @@ using FlowerShop.Domain.Entites;
 using FlowerShop.Infrastructure.DatabaseContexts;
 using FlowerShop.Infrastructure.Repositories.BaseRepositories;
 using Microsoft.EntityFrameworkCore;
+using FlowerShop.Business.Settings.PaginationSettings;
 
 namespace FlowerShop.Infrastructure.Repositories;
 public sealed class ShopRepository : BaseRepository<Shop>, IShopRepository
@@ -40,6 +41,6 @@ public sealed class ShopRepository : BaseRepository<Shop>, IShopRepository
     public Task<Shop?> GetByIdAsync(int id) =>
         DbContextSet.AsNoTracking().FirstOrDefaultAsync(s => s.Id == id);
 
-    public Task<List<Shop>> GetAllAsync() =>
-        DbContextSet.AsNoTracking().ToListAsync();
+    public Task<PageList<Shop>> GetAllPaginatedAsync(PageParameters pageParameters) =>
+        DbContextSet.PaginateAsync(pageParameters);
 }

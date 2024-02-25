@@ -1,4 +1,5 @@
-﻿using FlowerShop.Domain.Entites;
+﻿using FlowerShop.Business.Settings.PaginationSettings;
+using FlowerShop.Domain.Entites;
 
 namespace FlowerShop.Business.Interfaces.Repositories;
 public interface IShopRepository
@@ -8,5 +9,5 @@ public interface IShopRepository
     Task<bool> ExistsAsync(int id);
     Task<bool> DeleteAsync(int id);
     Task<Shop?> GetByIdAsync(int id);
-    Task<List<Shop>> GetAllAsync();
+    Task<PageList<Shop>> GetAllPaginatedAsync(PageParameters pageParameters);
 }
