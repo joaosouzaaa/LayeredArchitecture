@@ -1,4 +1,5 @@
 using FlowerShop.API.DependencyInjection;
+using FlowerShop.API.Middlewares;
 using FlowerShop.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +18,10 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+}
+else
+{
+    app.UseMiddleware<UnexpectedErrorMiddleware>();
 }
 
 app.UseHttpsRedirection();
