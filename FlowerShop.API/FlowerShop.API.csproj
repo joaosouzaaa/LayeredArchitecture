@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
@@ -15,6 +15,10 @@
 		<Folder Include="DependencyInjection\" />
 		<Folder Include="Filters\" />
 		<Folder Include="Middlewares\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\FlowerShop.DependencyInjection\FlowerShop.DependencyInjection.csproj" />
 	</ItemGroup>
 
 </Project>

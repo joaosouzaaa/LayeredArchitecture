@@ -12,4 +12,8 @@
 	  <Folder Include="Repositories\" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\FlowerShop.Business\FlowerShop.Business.csproj" />
+	</ItemGroup>
+
 </Project>

@@ -12,4 +12,8 @@
 	  <Folder Include="Settings\" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\FlowerShop.Domain\FlowerShop.Domain.csproj" />
+	</ItemGroup>
+
 </Project>
