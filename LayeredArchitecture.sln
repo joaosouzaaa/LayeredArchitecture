@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowerShop.Infrastructure",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowerShop.ApplicationService", "FlowerShop.ApplicationService\FlowerShop.ApplicationService.csproj", "{57816158-BAA7-4131-9FDC-30430ECDB4E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowerShop.Business", "FlowerShop.Business\FlowerShop.Business.csproj", "{4FDCF7E1-40FF-47CD-8745-E414D875A01F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{57816158-BAA7-4131-9FDC-30430ECDB4E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57816158-BAA7-4131-9FDC-30430ECDB4E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57816158-BAA7-4131-9FDC-30430ECDB4E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FDCF7E1-40FF-47CD-8745-E414D875A01F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FDCF7E1-40FF-47CD-8745-E414D875A01F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FDCF7E1-40FF-47CD-8745-E414D875A01F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FDCF7E1-40FF-47CD-8745-E414D875A01F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
