@@ -1,5 +1,5 @@
 ﻿namespace FlowerShop.Domain.Entites;
-public sealed class FlowerShop
+public sealed class Shop
 {
     public int Id { get; set; }
     public required string Name { get; set; }

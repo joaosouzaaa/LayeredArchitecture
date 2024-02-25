@@ -7,7 +7,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Folder Include="EntitiesMapping\" />
 		<Folder Include="Repositories\" />
 	</ItemGroup>
 
