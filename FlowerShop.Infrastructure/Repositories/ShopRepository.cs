@@ -27,7 +27,8 @@ public sealed class ShopRepository : BaseRepository<Shop>, IShopRepository
     }
 
     public Task<bool> ExistsAsync(int id) =>
-        DbContextSet.AsNoTracking().AnyAsync(s => s.Id == id);
+        DbContextSet.AsNoTracking()
+                    .AnyAsync(s => s.Id == id);
 
     public async Task<bool> DeleteAsync(int id)
     {
@@ -39,8 +40,11 @@ public sealed class ShopRepository : BaseRepository<Shop>, IShopRepository
     }
 
     public Task<Shop?> GetByIdAsync(int id) =>
-        DbContextSet.AsNoTracking().FirstOrDefaultAsync(s => s.Id == id);
+        DbContextSet.Include(s => s.Flowers)
+                    .AsNoTracking()
+                    .FirstOrDefaultAsync(s => s.Id == id);
 
     public Task<PageList<Shop>> GetAllPaginatedAsync(PageParameters pageParameters) =>
-        DbContextSet.Include(s => s.Flowers).PaginateAsync(pageParameters);
+        DbContextSet.Include(s => s.Flowers)
+                    .PaginateAsync(pageParameters);
 }

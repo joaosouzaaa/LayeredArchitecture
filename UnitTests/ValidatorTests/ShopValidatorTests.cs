@@ -38,23 +38,13 @@ public sealed class ShopValidatorTests
         Assert.False(validationResult.IsValid);
     }
 
-    public static IEnumerable<object[]> InvalidNameParameters()
-    {
-        yield return new object[]
+    public static TheoryData<string> InvalidNameParameters() =>
+        new()
         {
-            ""
-        };
-
-        yield return new object[]
-        {
-            "a"
-        };
-
-        yield return new object[]
-        {
+            "",
+            "a",
             new string('a', 103)
         };
-    }
 
     [Theory]
     [MemberData(nameof(InvalidLocationParameters))]
@@ -70,23 +60,13 @@ public sealed class ShopValidatorTests
         Assert.False(validationResult.IsValid);
     }
 
-    public static IEnumerable<object[]> InvalidLocationParameters()
-    {
-        yield return new object[]
+    public static TheoryData<string> InvalidLocationParameters() =>
+        new()
         {
-            ""
-        };
-
-        yield return new object[]
-        {
-            "a"
-        };
-
-        yield return new object[]
-        {
+            "",
+            "a",
             new string('a', 203)
         };
-    }
 
     [Theory]
     [MemberData(nameof(InvalidEmailParameters))]
@@ -102,41 +82,15 @@ public sealed class ShopValidatorTests
         Assert.False(validationResult.IsValid);
     }
 
-    public static IEnumerable<object[]> InvalidEmailParameters()
-    {
-        yield return new object[]
+    public static TheoryData<string> InvalidEmailParameters() =>
+        new()
         {
-            ""
+            "",
+            "a",
+             new string('a', 153),
+             "invalid",
+             "invalid.com",
+             "test@",
+             $"test@{new string('a', 160)}.com"
         };
-
-        yield return new object[]
-        {
-            "a"
-        };
-
-        yield return new object[]
-        {
-            new string('a', 153)
-        };
-
-        yield return new object[]
-        {
-            "invalid"
-        };
-
-        yield return new object[]
-        {
-            "invalid.com"
-        };
-
-        yield return new object[]
-        {
-            "test@"
-        };
-
-        yield return new object[]
-        {
-            $"test@{new string('a', 160)}.com"
-        };
-    }
 }

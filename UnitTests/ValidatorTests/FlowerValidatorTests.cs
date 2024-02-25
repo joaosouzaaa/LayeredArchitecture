@@ -66,21 +66,11 @@ public sealed class FlowerValidatorTests
         Assert.False(validationResult.IsValid);
     }
 
-    public static IEnumerable<object[]> InvalidStringWithMaxLength100Parameters()
-    {
-        yield return new object[]
+    public static TheoryData<string> InvalidStringWithMaxLength100Parameters() =>
+        new()
         {
-            ""
-        };
-
-        yield return new object[]
-        {
-            "a"
-        };
-
-        yield return new object[]
-        {
+            "",
+            "a",
             new string('a', 103)
         };
-    }
 }
