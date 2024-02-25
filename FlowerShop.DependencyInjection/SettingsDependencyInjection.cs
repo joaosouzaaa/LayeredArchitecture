@@ -4,9 +4,9 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace FlowerShop.DependencyInjection;
 
-public static class SettingsDependencyInjection
+internal static class SettingsDependencyInjection
 {
-    public static void AddSettingsDependencyInjection(this IServiceCollection services)
+    internal static void AddSettingsDependencyInjection(this IServiceCollection services)
     {
         services.AddScoped<INotificationHandler, NotificationHandler>();
     }

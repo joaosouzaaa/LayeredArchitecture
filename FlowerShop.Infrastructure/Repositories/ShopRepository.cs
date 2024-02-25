@@ -42,5 +42,5 @@ public sealed class ShopRepository : BaseRepository<Shop>, IShopRepository
         DbContextSet.AsNoTracking().FirstOrDefaultAsync(s => s.Id == id);
 
     public Task<PageList<Shop>> GetAllPaginatedAsync(PageParameters pageParameters) =>
-        DbContextSet.PaginateAsync(pageParameters);
+        DbContextSet.Include(s => s.Flowers).PaginateAsync(pageParameters);
 }

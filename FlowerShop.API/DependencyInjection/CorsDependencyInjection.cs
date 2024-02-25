@@ -2,9 +2,9 @@
 
 namespace FlowerShop.API.DependencyInjection;
 
-public static class CorsDependencyInjection
+internal static class CorsDependencyInjection
 {
-    public static void AddCorsDependencyInjection(this IServiceCollection services)
+    internal static void AddCorsDependencyInjection(this IServiceCollection services)
     {
         services.AddCors(p => p.AddPolicy(CorsPoliciesNamesConstants.CorsPolicy, builder =>
         {
