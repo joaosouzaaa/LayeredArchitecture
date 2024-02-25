@@ -1,5 +1,6 @@
 using FlowerShop.API.DependencyInjection;
 using FlowerShop.API.Middlewares;
+using FlowerShop.Business.Constants;
 using FlowerShop.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,7 +26,9 @@ else
 }
 
 app.UseHttpsRedirection();
+app.UseCors(CorsPoliciesNamesConstants.CorsPolicy);
 app.UseAuthorization();
 app.MapControllers();
+app.MigrateDatabase();
 
 app.Run();
