@@ -8,6 +8,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddCorsDependencyInjection();
+builder.Services.AddFilterDependencyInjection();
 builder.Services.AddDependencyInjection(configuration);
 
 var app = builder.Build();

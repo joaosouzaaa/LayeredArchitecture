@@ -12,7 +12,6 @@
 
 	<ItemGroup>
 		<Folder Include="Controllers\" />
-		<Folder Include="Filters\" />
 		<Folder Include="Middlewares\" />
 	</ItemGroup>
 
