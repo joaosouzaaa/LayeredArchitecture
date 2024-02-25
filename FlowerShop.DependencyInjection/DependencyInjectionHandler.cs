@@ -1,7 +1,7 @@
 ﻿using FlowerShop.Infrastructure.DatabaseContexts;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using FlowerShop.Business.Factories;
 
 namespace FlowerShop.DependencyInjection;
@@ -18,6 +18,7 @@ public static class DependencyInjectionHandler
 
         services.AddSettingsDependencyInjection();
         services.AddRepositoriesDependencyInjection();
+        services.AddMappersDependencyInjection();
         services.AddValidatorsDependencyInjection();
     }
 }
