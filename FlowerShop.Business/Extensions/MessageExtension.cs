@@ -11,5 +11,4 @@ public static class MessageExtension
 
         return ((DescriptionAttribute)attributes[0]).Description;
     }
-
 }
