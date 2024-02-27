@@ -39,9 +39,15 @@ public sealed class FlowerRepository : BaseRepository<Flower>, IFlowerRepository
         return await SaveChangesAsync();
     }
 
-    public Task<Flower?> GetByIdAsync(int id) =>
-        DbContextSet.AsNoTracking()
-                    .FirstOrDefaultAsync(f => f.Id == id);
+    public Task<Flower?> GetByIdAsync(int id, bool asNoTracking)
+    {
+        var query = (IQueryable<Flower>)DbContextSet;
+
+        if (asNoTracking)
+            query = DbContextSet.AsNoTracking();
+
+        return query.FirstOrDefaultAsync(f => f.Id == id);
+    }
 
     public Task<PageList<Flower>> GetAllPaginatedAsync(PageParameters pageParameters) =>
         DbContextSet.PaginateAsync(pageParameters);
