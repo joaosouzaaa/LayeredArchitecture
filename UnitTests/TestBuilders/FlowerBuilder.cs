@@ -11,7 +11,6 @@ public sealed class FlowerBuilder
     private string _color = "test";
     private string _species = "flower";
     private readonly EBloomingSeason _bloomingSeason = EBloomingSeason.Winter;
-    private readonly int _shopId = 123;
     private readonly EBloomingSeasonRequest _bloomingSeasonRequest = EBloomingSeasonRequest.Winter;
 
     public static FlowerBuilder NewObject() =>
@@ -25,7 +24,6 @@ public sealed class FlowerBuilder
             Color = _color,
             Species = _species,
             BloomingSeason = _bloomingSeason,
-            ShopId = _shopId
         };
 
     public FlowerSave SaveBuild() =>
