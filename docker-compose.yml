@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+  sqldataflowershop:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: mssql-container-flowershop
+    environment:
+      - SA_PASSWORD=Flowershop123
+      - ACCEPT_EULA=Y
+
+  flowershop.api:
+    image: ${DOCKER_REGISTRY-}flowershopapi
+    container_name: flowershop-api
+    environment:
+      - DOCKER_ENVIROMENT=DOCKER_ENV
+    build:
+      context: .
+      dockerfile: FlowerShop.API/Dockerfile
+    ports:
+      - "5020:80"
+      - "5021:443"
+    depends_on:
+      - sqldataflowershop

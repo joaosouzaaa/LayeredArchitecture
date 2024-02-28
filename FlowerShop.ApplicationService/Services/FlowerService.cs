@@ -11,7 +11,7 @@ using FlowerShop.Domain.Enums;
 using FluentValidation;
 
 namespace FlowerShop.ApplicationService.Services;
-public sealed class FlowerService : BaseService<Flower>, IFlowerService
+public sealed class FlowerService : BaseService<Flower>, IFlowerService, IFlowerServiceFacade
 {
     private readonly IFlowerRepository _flowerRepository;
     private readonly IFlowerMapper _flowerMapper;
@@ -81,4 +81,7 @@ public sealed class FlowerService : BaseService<Flower>, IFlowerService
 
         return _flowerMapper.DomainPageListToResponsePageList(flowerPageList);
     }
+
+    public Task<Flower?> GetByIdReturnsDomainObjectAsync(int id) =>
+        _flowerRepository.GetByIdAsync(id, false);
 }

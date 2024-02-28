@@ -72,4 +72,11 @@ public sealed class ShopBuilder
 
         return this;
     }
+
+    public ShopBuilder WithFlowerIdList(List<int> flowerIdList)
+    {
+        _flowerIdList = flowerIdList;
+
+        return this;
+    }
 }

@@ -8,5 +8,8 @@ internal static class ServicesDependencyInjection
     internal static void AddServicesDependencyInjection(this IServiceCollection services)
     {
         services.AddScoped<IFlowerService, FlowerService>();
+        services.AddScoped<IFlowerServiceFacade, FlowerService>();
+
+        services.AddScoped<IShopService, ShopService>();
     }
 }

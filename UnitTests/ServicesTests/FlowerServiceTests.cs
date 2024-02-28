@@ -301,4 +301,20 @@ public sealed class FlowerServiceTests
         // A
         Assert.Equal(flowerResponsePageListResult.Result.Count, flowerResponsePageList.Result.Count);
     }
+
+    [Fact]
+    public async Task GetByIdReturnsDomainObjectAsync_SuccessfulScenario_ReturnsExpectedResult()
+    {
+        // A
+        var id = 123;
+
+        _flowerRepositoryMock.Setup(f => f.GetByIdAsync(It.IsAny<int>(), false))
+            .Returns(Task.FromResult<Flower?>(null));
+
+        // A
+        var flowerResult = await _flowerService.GetByIdReturnsDomainObjectAsync(id);
+
+        // A
+        Assert.Null(flowerResult);
+    }
 }
