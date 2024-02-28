@@ -9,6 +9,5 @@ public sealed class Flower
     public required string Species { get; set; }
     public required EBloomingSeason BloomingSeason { get; set; }
 
-    public required int ShopId { get; set; }
-    public Shop Shop { get; set; }
+    public List<Shop> Shops { get; set; }
 }

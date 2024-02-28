@@ -8,6 +8,6 @@ public interface IFlowerRepository
     Task<bool> UpdateAsync(Flower flower);
     Task<bool> ExistsAsync(int id);
     Task<bool> DeleteAsync(int id);
-    Task<Flower?> GetByIdAsync(int id);
+    Task<Flower?> GetByIdAsync(int id, bool asNoTracking);
     Task<PageList<Flower>> GetAllPaginatedAsync(PageParameters pageParameters);
 }

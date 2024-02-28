@@ -7,14 +7,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Folder Include="DataTransferObjects\" />
-	  <Folder Include="Interfaces\Mappers\" />
-	  <Folder Include="Interfaces\Services\" />
-	  <Folder Include="Mappers\" />
-	  <Folder Include="Services\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <ProjectReference Include="..\FlowerShop.Infrastructure\FlowerShop.Infrastructure.csproj" />
 	</ItemGroup>
 

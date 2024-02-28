@@ -31,10 +31,12 @@ public sealed class FlowerMapping : IEntityTypeConfiguration<Flower>
             .IsRequired(true)
             .HasColumnName("blooming_season");
 
-        builder.HasOne(f => f.Shop)
+        builder.HasMany(f => f.Shops)
             .WithMany(s => s.Flowers)
-            .HasForeignKey(f => f.ShopId)
-            .HasConstraintName("FK_Flower_Shop")
-            .OnDelete(DeleteBehavior.Cascade);
+            .UsingEntity<Dictionary<string, object>>("ShopsFlowers", configuration =>
+            {
+                configuration.HasOne<Shop>().WithMany().HasForeignKey("ShopsId");
+                configuration.HasOne<Flower>().WithMany().HasForeignKey("FlowersId");
+            });
     }
 }

@@ -8,6 +8,6 @@ public interface IShopRepository
     Task<bool> UpdateAsync(Shop shop);
     Task<bool> ExistsAsync(int id);
     Task<bool> DeleteAsync(int id);
-    Task<Shop?> GetByIdAsync(int id);
+    Task<Shop?> GetByIdAsync(int id, bool asNoTracking);
     Task<PageList<Shop>> GetAllPaginatedAsync(PageParameters pageParameters);
 }
