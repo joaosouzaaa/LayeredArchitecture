@@ -1,9 +1,9 @@
-﻿using FlowerShop.Business.Interfaces.Repositories;
-using FlowerShop.Domain.Entites;
+﻿using FlowerShop.Domain.Entites;
 using FlowerShop.Infrastructure.DatabaseContexts;
 using FlowerShop.Infrastructure.Repositories.BaseRepositories;
 using Microsoft.EntityFrameworkCore;
 using FlowerShop.Business.Settings.PaginationSettings;
+using FlowerShop.Infrastructure.Interfaces.Repositories;
 
 namespace FlowerShop.Infrastructure.Repositories;
 public sealed class ShopRepository : BaseRepository<Shop>, IShopRepository

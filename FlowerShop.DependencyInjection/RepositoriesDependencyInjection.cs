@@ -1,4 +1,4 @@
-﻿using FlowerShop.Business.Interfaces.Repositories;
+﻿using FlowerShop.Infrastructure.Interfaces.Repositories;
 using FlowerShop.Infrastructure.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 

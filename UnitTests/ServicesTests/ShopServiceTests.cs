@@ -2,10 +2,10 @@
 using FlowerShop.ApplicationService.Interfaces.Mappers;
 using FlowerShop.ApplicationService.Interfaces.Services;
 using FlowerShop.ApplicationService.Services;
-using FlowerShop.Business.Interfaces.Repositories;
 using FlowerShop.Business.Interfaces.Settings;
 using FlowerShop.Business.Settings.PaginationSettings;
 using FlowerShop.Domain.Entites;
+using FlowerShop.Infrastructure.Interfaces.Repositories;
 using FluentValidation;
 using FluentValidation.Results;
 using Moq;

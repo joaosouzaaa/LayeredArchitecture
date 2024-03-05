@@ -1,7 +1,7 @@
 ﻿using FlowerShop.Business.Settings.PaginationSettings;
 using FlowerShop.Domain.Entites;
 
-namespace FlowerShop.Business.Interfaces.Repositories;
+namespace FlowerShop.Infrastructure.Interfaces.Repositories;
 public interface IShopRepository
 {
     Task<bool> AddAsync(Shop shop);
