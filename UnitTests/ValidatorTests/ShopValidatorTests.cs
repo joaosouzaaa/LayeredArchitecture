@@ -1,4 +1,4 @@
-﻿using FlowerShop.Business.Settings.ValidatorSettings;
+﻿using FlowerShop.CrossCutting.Settings.ValidatorSettings;
 using UnitTests.TestBuilders;
 
 namespace UnitTests.ValidatorTests;

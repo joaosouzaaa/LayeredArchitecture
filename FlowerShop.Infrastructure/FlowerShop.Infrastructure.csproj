@@ -15,7 +15,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\FlowerShop.Business\FlowerShop.Business.csproj" />
+	  <ProjectReference Include="..\FlowerShop.CrossCutting\FlowerShop.CrossCutting.csproj" />
 	</ItemGroup>
 
 </Project>

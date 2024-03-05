@@ -1,4 +1,4 @@
-﻿using FlowerShop.Business.Settings.ValidatorSettings;
+﻿using FlowerShop.CrossCutting.Settings.ValidatorSettings;
 using FlowerShop.Domain.Entites;
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;

@@ -1,4 +1,4 @@
-﻿using FlowerShop.Business.Extensions;
+﻿using FlowerShop.CrossCutting.Extensions;
 
 namespace UnitTests.ExtensionsTests;
 public sealed class StringFormatExtensionTests

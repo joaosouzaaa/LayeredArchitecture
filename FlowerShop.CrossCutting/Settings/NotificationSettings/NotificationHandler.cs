@@ -1,6 +1,6 @@
-﻿using FlowerShop.Business.Interfaces.Settings;
+﻿using FlowerShop.CrossCutting.Interfaces.Settings;
 
-namespace FlowerShop.Business.Settings.NotificationSettings;
+namespace FlowerShop.CrossCutting.Settings.NotificationSettings;
 public sealed class NotificationHandler : INotificationHandler
 {
     private readonly List<Notification> _notificationList;

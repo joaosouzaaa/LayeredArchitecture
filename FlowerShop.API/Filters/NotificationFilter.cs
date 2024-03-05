@@ -1,4 +1,4 @@
-﻿using FlowerShop.Business.Interfaces.Settings;
+﻿using FlowerShop.CrossCutting.Interfaces.Settings;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 

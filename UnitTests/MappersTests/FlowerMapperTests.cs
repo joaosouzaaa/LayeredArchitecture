@@ -1,5 +1,5 @@
 ﻿using FlowerShop.ApplicationService.Mappers;
-using FlowerShop.Business.Settings.PaginationSettings;
+using FlowerShop.CrossCutting.Settings.PaginationSettings;
 using FlowerShop.Domain.Entites;
 using FlowerShop.Domain.Enums;
 using UnitTests.TestBuilders;

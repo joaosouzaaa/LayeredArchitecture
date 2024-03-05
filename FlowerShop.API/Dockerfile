@@ -11,7 +11,7 @@ COPY ["FlowerShop.API/FlowerShop.API.csproj", "FlowerShop.API/"]
 COPY ["FlowerShop.DependencyInjection/FlowerShop.DependencyInjection.csproj", "FlowerShop.DependencyInjection/"]
 COPY ["FlowerShop.ApplicationService/FlowerShop.ApplicationService.csproj", "FlowerShop.ApplicationService/"]
 COPY ["FlowerShop.Infrastructure/FlowerShop.Infrastructure.csproj", "FlowerShop.Infrastructure/"]
-COPY ["FlowerShop.Business/FlowerShop.Business.csproj", "FlowerShop.Business/"]
+COPY ["FlowerShop.CrossCutting/FlowerShop.CrossCutting.csproj", "FlowerShop.CrossCutting/"]
 COPY ["FlowerShop.Domain/FlowerShop.Domain.csproj", "FlowerShop.Domain/"]
 RUN dotnet restore "./FlowerShop.API/FlowerShop.API.csproj"
 COPY . .

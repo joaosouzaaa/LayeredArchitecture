@@ -1,5 +1,5 @@
-﻿using FlowerShop.Business.Interfaces.Settings;
-using FlowerShop.Business.Settings.NotificationSettings;
+﻿using FlowerShop.CrossCutting.Interfaces.Settings;
+using FlowerShop.CrossCutting.Settings.NotificationSettings;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace FlowerShop.DependencyInjection;

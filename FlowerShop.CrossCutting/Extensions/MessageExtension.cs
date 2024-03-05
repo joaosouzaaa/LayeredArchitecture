@@ -1,7 +1,7 @@
 ﻿using FlowerShop.Domain.Enums;
 using System.ComponentModel;
 
-namespace FlowerShop.Business.Extensions;
+namespace FlowerShop.CrossCutting.Extensions;
 public static class MessageExtension
 {
     public static string Description(this EMessage message)

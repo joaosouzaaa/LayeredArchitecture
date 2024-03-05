@@ -1,6 +1,6 @@
 using FlowerShop.API.DependencyInjection;
 using FlowerShop.API.Middlewares;
-using FlowerShop.Business.Constants;
+using FlowerShop.CrossCutting.Constants;
 using FlowerShop.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);

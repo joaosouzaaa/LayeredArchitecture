@@ -1,5 +1,5 @@
 ﻿using FlowerShop.ApplicationService.DataTransferObjects.Flower;
-using FlowerShop.Business.Settings.PaginationSettings;
+using FlowerShop.CrossCutting.Settings.PaginationSettings;
 
 namespace FlowerShop.ApplicationService.Interfaces.Services;
 public interface IFlowerService

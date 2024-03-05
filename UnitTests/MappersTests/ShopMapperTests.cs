@@ -1,7 +1,7 @@
 ﻿using FlowerShop.ApplicationService.DataTransferObjects.Flower;
 using FlowerShop.ApplicationService.Interfaces.Mappers;
 using FlowerShop.ApplicationService.Mappers;
-using FlowerShop.Business.Settings.PaginationSettings;
+using FlowerShop.CrossCutting.Settings.PaginationSettings;
 using FlowerShop.Domain.Entites;
 using Moq;
 using UnitTests.TestBuilders;

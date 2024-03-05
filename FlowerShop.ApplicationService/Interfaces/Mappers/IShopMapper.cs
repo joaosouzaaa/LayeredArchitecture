@@ -1,5 +1,5 @@
 ﻿using FlowerShop.ApplicationService.DataTransferObjects.Shop;
-using FlowerShop.Business.Settings.PaginationSettings;
+using FlowerShop.CrossCutting.Settings.PaginationSettings;
 using FlowerShop.Domain.Entites;
 
 namespace FlowerShop.ApplicationService.Interfaces.Mappers;

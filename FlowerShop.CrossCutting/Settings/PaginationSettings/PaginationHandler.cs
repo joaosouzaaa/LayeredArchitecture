@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace FlowerShop.Business.Settings.PaginationSettings;
+namespace FlowerShop.CrossCutting.Settings.PaginationSettings;
 public static class PaginationHandler
 {
     public static async Task<PageList<TEntity>> PaginateAsync<TEntity>(this IQueryable<TEntity> query, PageParameters pageParameters)
