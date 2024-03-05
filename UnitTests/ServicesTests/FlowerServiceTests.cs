@@ -1,8 +1,8 @@
 ﻿using FlowerShop.ApplicationService.DataTransferObjects.Flower;
 using FlowerShop.ApplicationService.Interfaces.Mappers;
 using FlowerShop.ApplicationService.Services;
-using FlowerShop.Business.Interfaces.Settings;
-using FlowerShop.Business.Settings.PaginationSettings;
+using FlowerShop.CrossCutting.Interfaces.Settings;
+using FlowerShop.CrossCutting.Settings.PaginationSettings;
 using FlowerShop.Domain.Entites;
 using FlowerShop.Infrastructure.Interfaces.Repositories;
 using FluentValidation;

@@ -1,4 +1,4 @@
-﻿namespace FlowerShop.Business.Settings.NotificationSettings;
+﻿namespace FlowerShop.CrossCutting.Settings.NotificationSettings;
 public sealed class Notification
 {
     public required string Key { get; set; }

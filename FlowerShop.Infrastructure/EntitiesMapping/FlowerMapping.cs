@@ -1,4 +1,4 @@
-﻿using FlowerShop.Business.Constants;
+﻿using FlowerShop.CrossCutting.Constants;
 using FlowerShop.Domain.Entites;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;

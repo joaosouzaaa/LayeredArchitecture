@@ -1,9 +1,9 @@
-﻿using FlowerShop.Business.Extensions;
+﻿using FlowerShop.CrossCutting.Extensions;
 using FlowerShop.Domain.Entites;
 using FlowerShop.Domain.Enums;
 using FluentValidation;
 
-namespace FlowerShop.Business.Settings.ValidatorSettings;
+namespace FlowerShop.CrossCutting.Settings.ValidatorSettings;
 public sealed class ShopValidator : AbstractValidator<Shop>
 {
     public ShopValidator()

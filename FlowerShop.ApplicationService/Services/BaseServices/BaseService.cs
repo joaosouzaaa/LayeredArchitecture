@@ -1,4 +1,4 @@
-﻿using FlowerShop.Business.Interfaces.Settings;
+﻿using FlowerShop.CrossCutting.Interfaces.Settings;
 using FluentValidation;
 
 namespace FlowerShop.ApplicationService.Services.BaseServices;

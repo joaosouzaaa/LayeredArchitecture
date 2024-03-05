@@ -1,4 +1,4 @@
-﻿namespace FlowerShop.Business.Settings.PaginationSettings;
+﻿namespace FlowerShop.CrossCutting.Settings.PaginationSettings;
 public class PageParameters
 {
     private int _pageSize = 1;

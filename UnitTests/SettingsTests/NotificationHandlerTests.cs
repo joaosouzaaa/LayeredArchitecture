@@ -1,5 +1,5 @@
 ﻿using Bogus;
-using FlowerShop.Business.Settings.NotificationSettings;
+using FlowerShop.CrossCutting.Settings.NotificationSettings;
 
 namespace UnitTests.SettingsTests;
 public sealed class NotificationHandlerTests

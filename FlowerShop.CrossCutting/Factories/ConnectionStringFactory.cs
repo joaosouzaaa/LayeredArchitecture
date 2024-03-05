@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 
-namespace FlowerShop.Business.Factories;
+namespace FlowerShop.CrossCutting.Factories;
 public static class ConnectionStringFactory
 {
     public static string GetConnectionString(this IConfiguration configuration)

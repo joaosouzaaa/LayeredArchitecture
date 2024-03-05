@@ -13,13 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlowerShop.Infrastructure",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlowerShop.ApplicationService", "FlowerShop.ApplicationService\FlowerShop.ApplicationService.csproj", "{57816158-BAA7-4131-9FDC-30430ECDB4E8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlowerShop.Business", "FlowerShop.Business\FlowerShop.Business.csproj", "{4FDCF7E1-40FF-47CD-8745-E414D875A01F}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2A9BC37C-3D2D-43F3-9020-25AED9BC56F2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests\UnitTests.csproj", "{B1D549E1-3A69-408A-891D-B16587EDAC95}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{1A950849-5D83-462D-B124-1C7A1639EC98}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlowerShop.CrossCutting", "FlowerShop.CrossCutting\FlowerShop.CrossCutting.csproj", "{2122A5E8-F0B6-4EDD-AAF5-1982C8FC5C8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +47,6 @@ Global
 		{57816158-BAA7-4131-9FDC-30430ECDB4E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57816158-BAA7-4131-9FDC-30430ECDB4E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57816158-BAA7-4131-9FDC-30430ECDB4E8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4FDCF7E1-40FF-47CD-8745-E414D875A01F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4FDCF7E1-40FF-47CD-8745-E414D875A01F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4FDCF7E1-40FF-47CD-8745-E414D875A01F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4FDCF7E1-40FF-47CD-8745-E414D875A01F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B1D549E1-3A69-408A-891D-B16587EDAC95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B1D549E1-3A69-408A-891D-B16587EDAC95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1D549E1-3A69-408A-891D-B16587EDAC95}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -59,6 +55,10 @@ Global
 		{1A950849-5D83-462D-B124-1C7A1639EC98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A950849-5D83-462D-B124-1C7A1639EC98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A950849-5D83-462D-B124-1C7A1639EC98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2122A5E8-F0B6-4EDD-AAF5-1982C8FC5C8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2122A5E8-F0B6-4EDD-AAF5-1982C8FC5C8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2122A5E8-F0B6-4EDD-AAF5-1982C8FC5C8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2122A5E8-F0B6-4EDD-AAF5-1982C8FC5C8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,4 @@
-﻿using FlowerShop.Business.Constants;
+﻿using FlowerShop.CrossCutting.Constants;
 
 namespace FlowerShop.API.DependencyInjection;
 

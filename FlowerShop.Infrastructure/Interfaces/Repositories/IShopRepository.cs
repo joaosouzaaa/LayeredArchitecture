@@ -1,4 +1,4 @@
-﻿using FlowerShop.Business.Settings.PaginationSettings;
+﻿using FlowerShop.CrossCutting.Settings.PaginationSettings;
 using FlowerShop.Domain.Entites;
 
 namespace FlowerShop.Infrastructure.Interfaces.Repositories;

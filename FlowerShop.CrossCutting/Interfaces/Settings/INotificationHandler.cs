@@ -1,6 +1,6 @@
-﻿using FlowerShop.Business.Settings.NotificationSettings;
+﻿using FlowerShop.CrossCutting.Settings.NotificationSettings;
 
-namespace FlowerShop.Business.Interfaces.Settings;
+namespace FlowerShop.CrossCutting.Interfaces.Settings;
 public interface INotificationHandler
 {
     List<Notification> GetNotifications();

@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
-using FlowerShop.Business.Factories;
+using FlowerShop.CrossCutting.Factories;
 
 namespace UnitTests.FactoriesTests;
 public sealed class ConnectionStringFactoryTests

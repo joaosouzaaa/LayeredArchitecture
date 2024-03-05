@@ -1,4 +1,4 @@
-﻿namespace FlowerShop.Business.Constants;
+﻿namespace FlowerShop.CrossCutting.Constants;
 
 public static class CorsPoliciesNamesConstants
 {

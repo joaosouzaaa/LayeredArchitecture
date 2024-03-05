@@ -1,4 +1,4 @@
-﻿using FlowerShop.Business.Settings.NotificationSettings;
+﻿using FlowerShop.CrossCutting.Settings.NotificationSettings;
 using System.Net.Mime;
 using System.Text.Json;
 

@@ -1,7 +1,7 @@
 ﻿using FlowerShop.ApplicationService.DataTransferObjects.Flower;
 using FlowerShop.ApplicationService.Interfaces.Services;
-using FlowerShop.Business.Settings.NotificationSettings;
-using FlowerShop.Business.Settings.PaginationSettings;
+using FlowerShop.CrossCutting.Settings.NotificationSettings;
+using FlowerShop.CrossCutting.Settings.PaginationSettings;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FlowerShop.API.Controllers;
